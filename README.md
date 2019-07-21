@@ -1,4 +1,4 @@
 # popper-sample-project
 A sample project to test popper.
 
-**RUNTIME**: Singularity
+**RUNTIME**: Singularity 3.2.0
