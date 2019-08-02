@@ -5,7 +5,7 @@ python: 3.7
 services: docker
 before_install: scripts/install_scripts.sh
 install:
-- git clone --branch jayjeet/popper_dev_test https://github.com/systemslab/popper /tmp/popper
+- git clone --branch jayjeet/popper_dev_test https://github.com/JayjeetAtGithub/popper /tmp/popper
 - export PYTHONUNBUFFERED=1
 - pip install /tmp/popper/cli
 script: popper run
