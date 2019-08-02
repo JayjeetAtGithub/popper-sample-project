@@ -8,4 +8,4 @@ install:
 - git clone https://github.com/systemslab/popper /tmp/popper
 - export PYTHONUNBUFFERED=1
 - pip install /tmp/popper/cli
-script: popper run --wfile main.workflow --runtime singularity
+script: popper run
