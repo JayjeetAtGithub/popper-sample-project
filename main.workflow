@@ -3,7 +3,7 @@ workflow "foo" {
 }
 
 action "a" {
-  uses = "actions/bin/sh@master"
+  uses = "docker://debian:buster-slim"
   args = ["ls -la"]
 }
 
