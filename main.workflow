@@ -1,14 +1,14 @@
 workflow "foo" {
-  resolves = "b"
+  resolves = "bb"
 }
 
-action "a" {
+action "aa" {
   uses = "docker://ubuntu:latest"
   args = ["ls"]
 }
 
-action "b" {
-  needs = "a"
+action "bb" {
+  needs = "aa"
   uses = "docker://ubuntu:latest"
   args = ["ls"]
 }
