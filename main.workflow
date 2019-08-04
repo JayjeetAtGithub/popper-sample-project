@@ -3,12 +3,12 @@ workflow "foo" {
 }
 
 action "a" {
-  uses = "actions/bin/sh@master"
+  uses = "docker://ubuntu:latest"
   args = ["ls"]
 }
 
 action "b" {
   needs = "a"
-  uses = "actions/bin/sh@master"
+  uses = "docker://ubuntu:latest"
   args = ["ls"]
 }
