@@ -8,4 +8,4 @@ install:
 - git clone --branch jayjeet/popper_dev_test https://github.com/JayjeetAtGithub/popper /tmp/popper
 - export PYTHONUNBUFFERED=1
 - pip install /tmp/popper/cli
-script: popper run
+script: python check1.py
