@@ -3,12 +3,12 @@ workflow "foo" {
 }
 
 action "a" {
-  uses = "actions/bin/curl@master"
-  args = ["github.com"]
+  uses = "actions/bin/sh@master"
+  args = ["ls"]
 }
 
 action "b" {
   needs = "a"
-  uses = "actions/bin/curl@master"
-  args = ["google.com"]
+  uses = "actions/bin/sh@master"
+  args = ["ls"]
 }
