@@ -3,12 +3,12 @@ workflow "foo" {
 }
 
 action "a" {
-  uses = "docker://debian:buster-slim"
-  args = ["ls -la"]
+  uses = "actions/bin/curl@master"
+  args = ["github.com"]
 }
 
 action "b" {
   needs = "a"
-  uses = "actions/bin/sh@master"
-  args = ["ls -la"]
+  uses = "actions/bin/curl@master"
+  args = ["google.com"]
 }
