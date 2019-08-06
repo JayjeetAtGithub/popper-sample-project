@@ -1,14 +1,14 @@
 workflow "foo" {
-  resolves = "b"
+  resolves = "bb"
 }
 
-action "a" {
+action "aa" {
   uses = "actions/bin/curl@master"
   args = ["github.com"]
 }
 
-action "b" {
-  needs = "a"
+action "bb" {
+  needs = "aa"
   uses = "actions/bin/curl@master"
   args = ["google.com"]
 }
